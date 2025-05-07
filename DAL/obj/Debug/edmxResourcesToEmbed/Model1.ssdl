@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CARPARKINGMANAGEMENTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Position" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Salary" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="StartDate" Type="date" Nullable="false" />
+    <Property Name="ParkingLotID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="ID_Khach" />
+    </Key>
+    <Property Name="ID_Khach" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="10" />
+    <Property Name="Name_Customer" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsLoyalty" Type="bit" />
+    <Property Name="DiscountPercentage" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="DiscountStartDate" Type="date" />
+    <Property Name="DiscountEndDate" Type="date" />
+  </EntityType>
+  <EntityType Name="LOAIVE">
+    <Key>
+      <PropertyRef Name="ID_Ve" />
+    </Key>
+    <Property Name="ID_Ve" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenVe" Type="varchar" MaxLength="20" />
+    <Property Name="GiaTien" Type="float" />
+  </EntityType>
+  <EntityType Name="ParkingLot">
+    <Key>
+      <PropertyRef Name="ParkingLotID" />
+    </Key>
+    <Property Name="ParkingLotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Capacity" Type="int" />
+    <Property Name="TenBaiXe" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ParkingSpace">
+    <Key>
+      <PropertyRef Name="ParkingSpaceID" />
+    </Key>
+    <Property Name="ParkingSpaceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParkingLotID" Type="int" Nullable="false" />
+    <Property Name="VehicleID" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransactionID" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PaymentMethod" Type="nvarchar" MaxLength="50" />
+    <Property Name="PaymentDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TRANSACTION_LOG">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParkingSpaceID" Type="int" Nullable="false" />
+    <Property Name="EntryTime" Type="datetime" Nullable="false" />
+    <Property Name="ExitTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="VehicleID" />
+    </Key>
+    <Property Name="VehicleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LicensePlate" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID_Khach" Type="int" Nullable="false" />
+    <Property Name="ID_Ve" Type="int" Nullable="false" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Employee__Parkin__5441852A">
+    <End Role="ParkingLot" Type="Self.ParkingLot" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParkingLot">
+        <PropertyRef Name="ParkingLotID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="ParkingLotID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ParkingSp__Parki__47DBAE45">
+    <End Role="ParkingLot" Type="Self.ParkingLot" Multiplicity="1" />
+    <End Role="ParkingSpace" Type="Self.ParkingSpace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParkingLot">
+        <PropertyRef Name="ParkingLotID" />
+      </Principal>
+      <Dependent Role="ParkingSpace">
+        <PropertyRef Name="ParkingLotID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ParkingSp__Vehic__48CFD27E">
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="0..1" />
+    <End Role="ParkingSpace" Type="Self.ParkingSpace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleID" />
+      </Principal>
+      <Dependent Role="ParkingSpace">
+        <PropertyRef Name="VehicleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payment__Transac__59FA5E80">
+    <End Role="TRANSACTION_LOG" Type="Self.TRANSACTION_LOG" Multiplicity="1" />
+    <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRANSACTION_LOG">
+        <PropertyRef Name="TransactionID" />
+      </Principal>
+      <Dependent Role="Payment">
+        <PropertyRef Name="TransactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRANSACTI__Parki__4CA06362">
+    <End Role="ParkingSpace" Type="Self.ParkingSpace" Multiplicity="1" />
+    <End Role="TRANSACTION_LOG" Type="Self.TRANSACTION_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParkingSpace">
+        <PropertyRef Name="ParkingSpaceID" />
+      </Principal>
+      <Dependent Role="TRANSACTION_LOG">
+        <PropertyRef Name="ParkingSpaceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__USER__EmployeeID__5FB337D6">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="USER" Type="Self.USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="USER">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vehicle__ID_Khac__412EB0B6">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="ID_Khach" />
+      </Principal>
+      <Dependent Role="Vehicle">
+        <PropertyRef Name="ID_Khach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vehicle__ID_Ve__4222D4EF">
+    <End Role="LOAIVE" Type="Self.LOAIVE" Multiplicity="1" />
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAIVE">
+        <PropertyRef Name="ID_Ve" />
+      </Principal>
+      <Dependent Role="Vehicle">
+        <PropertyRef Name="ID_Ve" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CARPARKINGMANAGEMENTModelStoreContainer">
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOAIVE" EntityType="Self.LOAIVE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParkingLot" EntityType="Self.ParkingLot" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParkingSpace" EntityType="Self.ParkingSpace" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Payment" EntityType="Self.Payment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRANSACTION_LOG" EntityType="Self.TRANSACTION_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER" EntityType="Self.USER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vehicle" EntityType="Self.Vehicle" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Employee__Parkin__5441852A" Association="Self.FK__Employee__Parkin__5441852A">
+      <End Role="ParkingLot" EntitySet="ParkingLot" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ParkingSp__Parki__47DBAE45" Association="Self.FK__ParkingSp__Parki__47DBAE45">
+      <End Role="ParkingLot" EntitySet="ParkingLot" />
+      <End Role="ParkingSpace" EntitySet="ParkingSpace" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ParkingSp__Vehic__48CFD27E" Association="Self.FK__ParkingSp__Vehic__48CFD27E">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="ParkingSpace" EntitySet="ParkingSpace" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payment__Transac__59FA5E80" Association="Self.FK__Payment__Transac__59FA5E80">
+      <End Role="TRANSACTION_LOG" EntitySet="TRANSACTION_LOG" />
+      <End Role="Payment" EntitySet="Payment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRANSACTI__Parki__4CA06362" Association="Self.FK__TRANSACTI__Parki__4CA06362">
+      <End Role="ParkingSpace" EntitySet="ParkingSpace" />
+      <End Role="TRANSACTION_LOG" EntitySet="TRANSACTION_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK__USER__EmployeeID__5FB337D6" Association="Self.FK__USER__EmployeeID__5FB337D6">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="USER" EntitySet="USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vehicle__ID_Khac__412EB0B6" Association="Self.FK__Vehicle__ID_Khac__412EB0B6">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="Vehicle" EntitySet="Vehicle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vehicle__ID_Ve__4222D4EF" Association="Self.FK__Vehicle__ID_Ve__4222D4EF">
+      <End Role="LOAIVE" EntitySet="LOAIVE" />
+      <End Role="Vehicle" EntitySet="Vehicle" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

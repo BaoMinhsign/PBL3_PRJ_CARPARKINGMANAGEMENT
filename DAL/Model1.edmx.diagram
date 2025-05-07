@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a60e7ae891824a1885bd82872eb385ba" Name="Diagram1">
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.Employee" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.LOAIVE" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.ParkingLot" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.ParkingSpace" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.Payment" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.sysdiagram" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.TRANSACTION_LOG" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.USER" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CARPARKINGMANAGEMENTModel.Vehicle" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__Employee__Parkin__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__USER__EmployeeID__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__Vehicle__ID_Khac__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__Vehicle__ID_Ve__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__ParkingSp__Parki__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__ParkingSp__Vehic__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__TRANSACTI__Parki__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__Payment__Transac__59FA5E80" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
