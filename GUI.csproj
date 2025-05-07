@@ -193,12 +193,12 @@
     <None Include="Resources\Search_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{e7b66aba-ed21-4335-9519-d14e441b30ab}</Project>
+    <ProjectReference Include="BLL\BLL.csproj">
+      <Project>{762aac92-b957-4734-88d1-0da06aacc9ab}</Project>
       <Name>BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{53019579-589e-47ff-bcce-c05b34935044}</Project>
+    <ProjectReference Include="DAL\DAL.csproj">
+      <Project>{b228f7f8-7c29-402a-ab4a-7b0f550e726b}</Project>
       <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
