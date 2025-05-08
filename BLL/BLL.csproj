@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="EmployeeBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThongKeBLL.cs" />
     <Compile Include="UserLoginBLL.cs" />
   </ItemGroup>
   <ItemGroup>

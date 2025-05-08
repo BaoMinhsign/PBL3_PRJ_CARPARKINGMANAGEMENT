@@ -23,3 +23,29 @@ C:\Users\TRAN BAO MINH\source\repos\PBL3_CARPARKINGMANAGEMENT\bin\Debug\EntityFr
 C:\Users\TRAN BAO MINH\source\repos\PBL3_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.MainForm.resources
 C:\Users\TRAN BAO MINH\source\repos\PBL3_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.OverViewUC.resources
 C:\Users\TRAN BAO MINH\source\repos\PBL3_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.EmployeeUC.resources
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\PBL3_CARPARKINGMANAGEMENT.exe.config
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\PBL3_CARPARKINGMANAGEMENT.exe
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\PBL3_CARPARKINGMANAGEMENT.pdb
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\BLL.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\DAL.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\Guna.UI2.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\BLL.pdb
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\BLL.dll.config
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\DAL.pdb
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\DAL.dll.config
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\PBL3_CARPARKINGMANAGEMENT.EmployeeUC.resources
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Login.resources
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\PBL3_CARPARKINGMANAGEMENT.MainForm.resources
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\PBL3_CARPARKINGMANAGEMENT.OverViewUC.resources
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Properties.Resources.resources
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\GUI.csproj.Up2Date
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\PBL3_CARPARKINGMANAGEMENT.exe
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\PBL3_CARPARKINGMANAGEMENT.pdb
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\obj\Debug\PBL3_CARPARKINGMANAGEMENT.ThongKeUC.resources

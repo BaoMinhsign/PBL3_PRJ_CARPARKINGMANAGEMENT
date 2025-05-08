@@ -279,19 +279,20 @@
             // 
             this.guna2PictureBox1.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Khachhang;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(25, 31);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(10, 6);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(30, 23);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Calibri", 18.25F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(59, 11);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(45, 3);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(120, 31);
             this.guna2HtmlLabel5.TabIndex = 1;
@@ -312,12 +313,12 @@
             this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(53, 37);
+            this.guna2TextBox4.Location = new System.Drawing.Point(5, 37);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PlaceholderText = "Số khách hàng";
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(125, 46);
+            this.guna2TextBox4.Size = new System.Drawing.Size(198, 49);
             this.guna2TextBox4.TabIndex = 2;
             this.guna2TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -338,9 +339,9 @@
             // 
             this.guna2PictureBox2.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Thongke;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(25, 31);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(18, -2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(40, 42);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.guna2PictureBox2.TabIndex = 3;
             this.guna2PictureBox2.TabStop = false;
@@ -350,7 +351,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Calibri", 18.25F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(59, 11);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(56, 3);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(95, 31);
             this.guna2HtmlLabel6.TabIndex = 1;
@@ -371,12 +372,12 @@
             this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(53, 37);
+            this.guna2TextBox5.Location = new System.Drawing.Point(5, 39);
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PlaceholderText = "Tổng doanh thu";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(125, 46);
+            this.guna2TextBox5.Size = new System.Drawing.Size(198, 46);
             this.guna2TextBox5.TabIndex = 2;
             this.guna2TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -397,9 +398,9 @@
             // 
             this.guna2PictureBox3.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Giaodich;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(25, 31);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(18, 9);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(29, 24);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.guna2PictureBox3.TabIndex = 3;
             this.guna2PictureBox3.TabStop = false;
@@ -409,11 +410,12 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Calibri", 18.25F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(59, 11);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(54, 5);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(96, 31);
             this.guna2HtmlLabel7.TabIndex = 1;
             this.guna2HtmlLabel7.Text = "Giao dịch";
+            this.guna2HtmlLabel7.Click += new System.EventHandler(this.guna2HtmlLabel7_Click);
             // 
             // guna2TextBox6
             // 
@@ -430,12 +432,12 @@
             this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(53, 37);
+            this.guna2TextBox6.Location = new System.Drawing.Point(5, 37);
             this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PlaceholderText = "Số giao dịch";
             this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(125, 46);
+            this.guna2TextBox6.Size = new System.Drawing.Size(198, 52);
             this.guna2TextBox6.TabIndex = 2;
             this.guna2TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

@@ -10,3 +10,15 @@ C:\Users\TRAN BAO MINH\source\repos\PBL3_CARPARKINGMANAGEMENT\DAL\bin\Debug\Enti
 C:\Users\TRAN BAO MINH\source\repos\PBL3_CARPARKINGMANAGEMENT\DAL\obj\Debug\DAL.csproj.Up2Date
 C:\Users\TRAN BAO MINH\source\repos\PBL3_CARPARKINGMANAGEMENT\DAL\obj\Debug\DAL.dll
 C:\Users\TRAN BAO MINH\source\repos\PBL3_CARPARKINGMANAGEMENT\DAL\obj\Debug\DAL.pdb
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\bin\Debug\DAL.dll.config
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\bin\Debug\DAL.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\bin\Debug\DAL.pdb
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\obj\Debug\DAL.dll
+C:\Users\DELL\Desktop\Home\DaiHoc\pbl3\PBL3_PRJ_CARPARKINGMANAGEMENT-main\DAL\obj\Debug\DAL.pdb

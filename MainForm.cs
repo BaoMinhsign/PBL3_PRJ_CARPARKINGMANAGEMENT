@@ -13,15 +13,35 @@ namespace PBL3_CARPARKINGMANAGEMENT
 {
     public partial class MainForm: Form
     {
+        // Store reference to ThongKeUC for easy access
+        private ThongKeUC thongKeUCInstance;
+        
         public MainForm()
         {
             InitializeComponent();
         }
+        
         public void LoadUC(UserControl uc)
         {
-            PanelMain.Controls.Clear();
-            uc.Dock = DockStyle.Fill;
-            PanelMain.Controls.Add(uc);
+            try
+            {
+                PanelMain.Controls.Clear();
+                uc.Dock = DockStyle.Fill;
+                PanelMain.Controls.Add(uc);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi trong LoadUC: {ex.Message}\n\nStackTrace: {ex.StackTrace}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Method to refresh statistics if the panel is currently visible
+        public void RefreshStatisticsIfVisible()
+        {
+            if (thongKeUCInstance != null && PanelMain.Controls.Contains(thongKeUCInstance))
+            {
+                thongKeUCInstance.RefreshAllStatistics();
+            }
         }
 
         private void OverView_btn_Click(object sender, EventArgs e)
@@ -32,36 +52,57 @@ namespace PBL3_CARPARKINGMANAGEMENT
         private void Employee_btn_Click(object sender, EventArgs e)
         {
             LoadUC(new EmployeeUC());
+            // Employee changes might affect statistics
+            RefreshStatisticsIfVisible();
         }
 
         private void Customer_btn_Click(object sender, EventArgs e)
         {
-
+            // Customer UserControl would be loaded here
+            // Customer changes affect statistics
+            RefreshStatisticsIfVisible();
         }
 
         private void Vehicle_btn_Click(object sender, EventArgs e)
         {
-
+            // Vehicle UserControl would be loaded here
+            // Vehicle changes affect statistics
+            RefreshStatisticsIfVisible();
         }
 
         private void Parkinglot_btn_Click(object sender, EventArgs e)
         {
-
+            // ParkingLot UserControl would be loaded here
+            // Parking lot changes affect statistics
+            RefreshStatisticsIfVisible();
         }
 
         private void Analys_btn_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                // Create ThongKeUC instance and save reference
+                thongKeUCInstance = new ThongKeUC();
+                
+                // Load the control
+                LoadUC(thongKeUCInstance);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải thống kê: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Transaction_btn_Click(object sender, EventArgs e)
         {
-
+            // Transaction UserControl would be loaded here
+            // Transaction changes definitely affect statistics
+            RefreshStatisticsIfVisible();
         }
 
         private void Logout_btn_Click(object sender, EventArgs e)
         {
-
+            // Logout logic
         }
     }
 }
