@@ -82,3 +82,7 @@ C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj
 C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.GiaoDien.resources
 C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.AddVehicleForm.resources
 C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.ParkingLotUC.resources
+C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.BikeParkingUC.resources
+C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.CarParkingUC.resources
+C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.MotorBikeParkingUC.resources
+C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Parking_StatusForm.resources

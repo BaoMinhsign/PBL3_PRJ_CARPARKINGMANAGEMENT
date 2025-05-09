@@ -41,7 +41,6 @@
             this.Transaction_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Analys_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Parkinglot_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.Vehicle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Customer_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Employee_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -106,7 +105,6 @@
             this.PanelSidebar.Controls.Add(this.Transaction_btn);
             this.PanelSidebar.Controls.Add(this.Analys_btn);
             this.PanelSidebar.Controls.Add(this.Parkinglot_btn);
-            this.PanelSidebar.Controls.Add(this.Vehicle_btn);
             this.PanelSidebar.Controls.Add(this.Customer_btn);
             this.PanelSidebar.Controls.Add(this.Employee_btn);
             this.PanelSidebar.Location = new System.Drawing.Point(0, 99);
@@ -187,7 +185,7 @@
             this.Transaction_btn.HoverState.ForeColor = System.Drawing.Color.White;
             this.Transaction_btn.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Giaodich;
             this.Transaction_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Transaction_btn.Location = new System.Drawing.Point(18, 308);
+            this.Transaction_btn.Location = new System.Drawing.Point(18, 253);
             this.Transaction_btn.Name = "Transaction_btn";
             this.Transaction_btn.Size = new System.Drawing.Size(160, 45);
             this.Transaction_btn.TabIndex = 6;
@@ -212,7 +210,7 @@
             this.Analys_btn.HoverState.ForeColor = System.Drawing.Color.White;
             this.Analys_btn.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Thongke;
             this.Analys_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Analys_btn.Location = new System.Drawing.Point(18, 257);
+            this.Analys_btn.Location = new System.Drawing.Point(18, 203);
             this.Analys_btn.Name = "Analys_btn";
             this.Analys_btn.Size = new System.Drawing.Size(160, 45);
             this.Analys_btn.TabIndex = 5;
@@ -237,7 +235,7 @@
             this.Parkinglot_btn.HoverState.ForeColor = System.Drawing.Color.White;
             this.Parkinglot_btn.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Baido;
             this.Parkinglot_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Parkinglot_btn.Location = new System.Drawing.Point(18, 206);
+            this.Parkinglot_btn.Location = new System.Drawing.Point(18, 153);
             this.Parkinglot_btn.Name = "Parkinglot_btn";
             this.Parkinglot_btn.Size = new System.Drawing.Size(160, 45);
             this.Parkinglot_btn.TabIndex = 4;
@@ -245,31 +243,6 @@
             this.Parkinglot_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Parkinglot_btn.TextOffset = new System.Drawing.Point(10, 0);
             this.Parkinglot_btn.Click += new System.EventHandler(this.Parkinglot_btn_Click);
-            // 
-            // Vehicle_btn
-            // 
-            this.Vehicle_btn.Animated = true;
-            this.Vehicle_btn.BorderRadius = 10;
-            this.Vehicle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Vehicle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Vehicle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Vehicle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Vehicle_btn.FillColor = System.Drawing.Color.Transparent;
-            this.Vehicle_btn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Vehicle_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
-            this.Vehicle_btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(93)))), ((int)(((byte)(211)))));
-            this.Vehicle_btn.HoverState.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Vehicle_btn.HoverState.ForeColor = System.Drawing.Color.White;
-            this.Vehicle_btn.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Phuongtien;
-            this.Vehicle_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Vehicle_btn.Location = new System.Drawing.Point(18, 155);
-            this.Vehicle_btn.Name = "Vehicle_btn";
-            this.Vehicle_btn.Size = new System.Drawing.Size(160, 45);
-            this.Vehicle_btn.TabIndex = 3;
-            this.Vehicle_btn.Text = "Phương tiện";
-            this.Vehicle_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Vehicle_btn.TextOffset = new System.Drawing.Point(10, 0);
-            this.Vehicle_btn.Click += new System.EventHandler(this.Vehicle_btn_Click);
             // 
             // Customer_btn
             // 
@@ -287,7 +260,7 @@
             this.Customer_btn.HoverState.ForeColor = System.Drawing.Color.White;
             this.Customer_btn.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Khachhang;
             this.Customer_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Customer_btn.Location = new System.Drawing.Point(18, 104);
+            this.Customer_btn.Location = new System.Drawing.Point(18, 103);
             this.Customer_btn.Name = "Customer_btn";
             this.Customer_btn.Size = new System.Drawing.Size(160, 45);
             this.Customer_btn.TabIndex = 2;
@@ -374,7 +347,6 @@
         private Guna.UI2.WinForms.Guna2Button Transaction_btn;
         private Guna.UI2.WinForms.Guna2Button Analys_btn;
         private Guna.UI2.WinForms.Guna2Button Parkinglot_btn;
-        private Guna.UI2.WinForms.Guna2Button Vehicle_btn;
         private Guna.UI2.WinForms.Guna2Button Customer_btn;
         private Guna.UI2.WinForms.Guna2Button OverView_btn;
         private Guna.UI2.WinForms.Guna2Button Logout_btn;

@@ -45,11 +45,6 @@ namespace DAL
             }
             return vehicledata;
         }
-        public void AddVehicle(Vehicle v)
-        {
-            db.Vehicles.Add(v);
-            db.SaveChanges();
-        }
         public bool AddvehicleToParkingSpace(Vehicle v, KHACHHANG kh, ParkingSpace parking, ParkingLot slot)
         {
             using (var db = new DataAccessEntity())

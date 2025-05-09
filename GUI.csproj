@@ -75,6 +75,12 @@
     <Compile Include="AddVehicleForm.Designer.cs">
       <DependentUpon>AddVehicleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BikeParkingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BikeParkingUC.Designer.cs">
+      <DependentUpon>BikeParkingUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="CARPARKINGMANAGEMENTDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,6 +90,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CARPARKINGMANAGEMENTDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CarParkingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarParkingUC.Designer.cs">
+      <DependentUpon>CarParkingUC.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerUC.cs">
       <SubType>UserControl</SubType>
@@ -115,6 +127,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MotorBikeParkingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MotorBikeParkingUC.Designer.cs">
+      <DependentUpon>MotorBikeParkingUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="OverViewUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +144,12 @@
     </Compile>
     <Compile Include="ParkingLotUC.Designer.cs">
       <DependentUpon>ParkingLotUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parking_StatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parking_StatusForm.Designer.cs">
+      <DependentUpon>Parking_StatusForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,6 +177,12 @@
     <EmbeddedResource Include="AddVehicleForm.resx">
       <DependentUpon>AddVehicleForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BikeParkingUC.resx">
+      <DependentUpon>BikeParkingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarParkingUC.resx">
+      <DependentUpon>CarParkingUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerUC.resx">
       <DependentUpon>CustomerUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,11 +198,17 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MotorBikeParkingUC.resx">
+      <DependentUpon>MotorBikeParkingUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OverViewUC.resx">
       <DependentUpon>OverViewUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParkingLotUC.resx">
       <DependentUpon>ParkingLotUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parking_StatusForm.resx">
+      <DependentUpon>Parking_StatusForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -290,6 +326,27 @@
       <Project>{b228f7f8-7c29-402a-ab4a-7b0f550e726b}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bikeicon_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bikeicon_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caricon_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caricon_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motoricon_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motoricon_green.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

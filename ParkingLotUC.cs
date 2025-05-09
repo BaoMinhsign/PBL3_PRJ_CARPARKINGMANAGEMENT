@@ -91,5 +91,11 @@ namespace PBL3_CARPARKINGMANAGEMENT
                 MessageBox.Show("Please select a parking space to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Parking_StatusForm f = new Parking_StatusForm();
+            f.ShowDialog();
+        }
     }
 }

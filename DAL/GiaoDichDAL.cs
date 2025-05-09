@@ -25,8 +25,8 @@ namespace DAL
             using (var context = new DataAccessEntity()) // Changed from CARPARKINGMANAGEMENTEntities to DataAccessEntity
             {
                 var query = from t in context.TRANSACTION_LOG
-                            join ps in context.ParkingSpaces on t.ParkingSpaceID equals ps.ParkingSpaceID
-                            join v in context.Vehicles on ps.VehicleID equals v.VehicleID
+                            //join ps in context.ParkingSpaces on t.ParkingSpaceID equals ps.ParkingSpaceID
+                            join v in context.Vehicles on t.VehicleID equals v.VehicleID
                             join k in context.KHACHHANGs on v.ID_Khach equals k.ID_Khach
                             join l in context.LOAIVEs on v.ID_Ve equals l.ID_Ve
                             join p in context.Payments on t.TransactionID equals p.TransactionID into pay
