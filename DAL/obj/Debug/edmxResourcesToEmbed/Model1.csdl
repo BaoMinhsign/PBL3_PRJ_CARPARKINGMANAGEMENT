@@ -42,7 +42,7 @@
     </Key>
     <Property Name="ParkingLotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Capacity" Type="Int32" />
-    <Property Name="TenBaiXe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TenBaiXe" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Employees" Relationship="Self.FK__Employee__Parkin__5441852A" FromRole="ParkingLot" ToRole="Employee" />
     <NavigationProperty Name="ParkingSpaces" Relationship="Self.FK__ParkingSp__Parki__47DBAE45" FromRole="ParkingLot" ToRole="ParkingSpace" />
   </EntityType>
@@ -85,10 +85,12 @@
     </Key>
     <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ParkingSpaceID" Type="Int32" Nullable="false" />
-    <Property Name="EntryTime" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="ExitTime" Type="DateTime" Precision="3" />
+    <Property Name="EntryTime" Type="DateTime" Precision="7" />
+    <Property Name="ExitTime" Type="DateTime" Precision="7" />
     <NavigationProperty Name="ParkingSpace" Relationship="Self.FK__TRANSACTI__Parki__4CA06362" FromRole="TRANSACTION_LOG" ToRole="ParkingSpace" />
     <NavigationProperty Name="Payments" Relationship="Self.FK__Payment__Transac__59FA5E80" FromRole="TRANSACTION_LOG" ToRole="Payment" />
+    <Property Name="VehicleID" Type="Int32" />
+    <NavigationProperty Name="Vehicle" Relationship="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle" FromRole="TRANSACTION_LOG" ToRole="Vehicle" />
   </EntityType>
   <EntityType Name="USER">
     <Key>
@@ -114,6 +116,7 @@
     <NavigationProperty Name="KHACHHANG" Relationship="Self.FK__Vehicle__ID_Khac__412EB0B6" FromRole="Vehicle" ToRole="KHACHHANG" />
     <NavigationProperty Name="LOAIVE" Relationship="Self.FK__Vehicle__ID_Ve__4222D4EF" FromRole="Vehicle" ToRole="LOAIVE" />
     <NavigationProperty Name="ParkingSpaces" Relationship="Self.FK__ParkingSp__Vehic__48CFD27E" FromRole="Vehicle" ToRole="ParkingSpace" />
+    <NavigationProperty Name="TRANSACTION_LOG" Relationship="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle" FromRole="Vehicle" ToRole="TRANSACTION_LOG" />
   </EntityType>
   <Association Name="FK__Employee__Parkin__5441852A">
     <End Role="ParkingLot" Type="Self.ParkingLot" Multiplicity="1" />
@@ -254,5 +257,21 @@
       <End Role="TRANSACTION_LOG" EntitySet="TRANSACTION_LOG" />
       <End Role="Payment" EntitySet="Payments" />
     </AssociationSet>
+    <AssociationSet Name="FK_TransactionLog_Vehicle" Association="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle">
+      <End Role="Vehicle" EntitySet="Vehicles" />
+      <End Role="TRANSACTION_LOG" EntitySet="TRANSACTION_LOG" />
+    </AssociationSet>
   </EntityContainer>
+  <Association Name="FK_TransactionLog_Vehicle">
+    <End Type="CARPARKINGMANAGEMENTModel.Vehicle" Role="Vehicle" Multiplicity="0..1" />
+    <End Type="CARPARKINGMANAGEMENTModel.TRANSACTION_LOG" Role="TRANSACTION_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleID" />
+      </Principal>
+      <Dependent Role="TRANSACTION_LOG">
+        <PropertyRef Name="VehicleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

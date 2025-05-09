@@ -55,7 +55,7 @@
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel2);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.CadetBlue;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(-3, 0);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(6, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(886, 512);
             this.guna2GradientPanel1.TabIndex = 1;
@@ -177,6 +177,7 @@
             this.password_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_txt.Location = new System.Drawing.Point(26, 203);
             this.password_txt.Name = "password_txt";
+            this.password_txt.PasswordChar = '*';
             this.password_txt.PlaceholderText = "";
             this.password_txt.SelectedText = "";
             this.password_txt.Size = new System.Drawing.Size(349, 36);

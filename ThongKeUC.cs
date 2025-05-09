@@ -324,7 +324,7 @@ namespace PBL3_CARPARKINGMANAGEMENT
                                 if (column != null)
                                 {
                                     column.HeaderText = "Tỷ lệ lấp đầy";
-                                    column.Width = 80;
+                                    //column.Width = 80;
                                     column.DefaultCellStyle.Format = "0.00\\%";
                                 }
                             }
@@ -369,12 +369,11 @@ namespace PBL3_CARPARKINGMANAGEMENT
                             // Kiểm tra xem thuộc tính Width có thể gán được giá trị không
                             try
                             {
-                                column.Width = width;
                             }
                             catch (NullReferenceException)
                             {
                                 // Nếu gặp NullReferenceException khi thiết lập Width, thử cách khác
-                                System.Diagnostics.Debug.WriteLine($"Không thể thiết lập Width cho cột {columnName}");
+                                //System.Diagnostics.Debug.WriteLine($"Không thể thiết lập Width cho cột {columnName}");
                                 
                                 // Sử dụng phương thức khác để thiết lập Width (nếu có)
                                 if (column is DataGridViewColumn dgvColumn)

@@ -38,7 +38,7 @@
     </Key>
     <Property Name="ParkingLotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Capacity" Type="int" />
-    <Property Name="TenBaiXe" Type="varchar" MaxLength="50" />
+    <Property Name="TenBaiXe" Type="nvarchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="ParkingSpace">
     <Key>
@@ -75,8 +75,9 @@
     </Key>
     <Property Name="TransactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ParkingSpaceID" Type="int" Nullable="false" />
-    <Property Name="EntryTime" Type="datetime" Nullable="false" />
-    <Property Name="ExitTime" Type="datetime" />
+    <Property Name="EntryTime" Type="datetime2" Precision="7" />
+    <Property Name="ExitTime" Type="datetime2" Precision="7" />
+    <Property Name="VehicleID" Type="int" />
   </EntityType>
   <EntityType Name="USER">
     <Key>
@@ -195,6 +196,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_TransactionLog_Vehicle">
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="0..1" />
+    <End Role="TRANSACTION_LOG" Type="Self.TRANSACTION_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleID" />
+      </Principal>
+      <Dependent Role="TRANSACTION_LOG">
+        <PropertyRef Name="VehicleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="CARPARKINGMANAGEMENTModelStoreContainer">
     <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
@@ -237,6 +250,10 @@
     <AssociationSet Name="FK__Vehicle__ID_Ve__4222D4EF" Association="Self.FK__Vehicle__ID_Ve__4222D4EF">
       <End Role="LOAIVE" EntitySet="LOAIVE" />
       <End Role="Vehicle" EntitySet="Vehicle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionLog_Vehicle" Association="Self.FK_TransactionLog_Vehicle">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="TRANSACTION_LOG" EntitySet="TRANSACTION_LOG" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

@@ -23,6 +23,7 @@
         <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__ParkingSp__Vehic__48CFD27E" ManuallyRouted="false" />
         <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__TRANSACTI__Parki__4CA06362" ManuallyRouted="false" />
         <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK__Payment__Transac__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

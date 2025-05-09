@@ -18,6 +18,7 @@ namespace DAL
         public Vehicle()
         {
             this.ParkingSpaces = new HashSet<ParkingSpace>();
+            this.TRANSACTION_LOG = new HashSet<TRANSACTION_LOG>();
         }
     
         public int VehicleID { get; set; }
@@ -30,5 +31,7 @@ namespace DAL
         public virtual LOAIVE LOAIVE { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ParkingSpace> ParkingSpaces { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TRANSACTION_LOG> TRANSACTION_LOG { get; set; }
     }
 }

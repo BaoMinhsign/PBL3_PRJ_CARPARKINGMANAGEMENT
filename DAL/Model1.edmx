@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CARPARKINGMANAGEMENTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CARPARKINGMANAGEMENTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Employee">
           <Key>
             <PropertyRef Name="EmployeeID" />
@@ -43,7 +43,7 @@
           </Key>
           <Property Name="ParkingLotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Capacity" Type="int" />
-          <Property Name="TenBaiXe" Type="varchar" MaxLength="50" />
+          <Property Name="TenBaiXe" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="ParkingSpace">
           <Key>
@@ -80,8 +80,9 @@
           </Key>
           <Property Name="TransactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ParkingSpaceID" Type="int" Nullable="false" />
-          <Property Name="EntryTime" Type="datetime" Nullable="false" />
-          <Property Name="ExitTime" Type="datetime" />
+          <Property Name="EntryTime" Type="datetime2" Precision="7" />
+          <Property Name="ExitTime" Type="datetime2" Precision="7" />
+          <Property Name="VehicleID" Type="int" />
         </EntityType>
         <EntityType Name="USER">
           <Key>
@@ -200,6 +201,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_TransactionLog_Vehicle">
+          <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="0..1" />
+          <End Role="TRANSACTION_LOG" Type="Self.TRANSACTION_LOG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="VehicleID" />
+            </Principal>
+            <Dependent Role="TRANSACTION_LOG">
+              <PropertyRef Name="VehicleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="CARPARKINGMANAGEMENTModelStoreContainer">
           <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
@@ -243,9 +256,12 @@
             <End Role="LOAIVE" EntitySet="LOAIVE" />
             <End Role="Vehicle" EntitySet="Vehicle" />
           </AssociationSet>
+          <AssociationSet Name="FK_TransactionLog_Vehicle" Association="Self.FK_TransactionLog_Vehicle">
+            <End Role="Vehicle" EntitySet="Vehicle" />
+            <End Role="TRANSACTION_LOG" EntitySet="TRANSACTION_LOG" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CARPARKINGMANAGEMENTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -291,7 +307,7 @@
           </Key>
           <Property Name="ParkingLotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Capacity" Type="Int32" />
-          <Property Name="TenBaiXe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TenBaiXe" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Employees" Relationship="Self.FK__Employee__Parkin__5441852A" FromRole="ParkingLot" ToRole="Employee" />
           <NavigationProperty Name="ParkingSpaces" Relationship="Self.FK__ParkingSp__Parki__47DBAE45" FromRole="ParkingLot" ToRole="ParkingSpace" />
         </EntityType>
@@ -334,10 +350,12 @@
           </Key>
           <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ParkingSpaceID" Type="Int32" Nullable="false" />
-          <Property Name="EntryTime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="ExitTime" Type="DateTime" Precision="3" />
+          <Property Name="EntryTime" Type="DateTime" Precision="7" />
+          <Property Name="ExitTime" Type="DateTime" Precision="7" />
           <NavigationProperty Name="ParkingSpace" Relationship="Self.FK__TRANSACTI__Parki__4CA06362" FromRole="TRANSACTION_LOG" ToRole="ParkingSpace" />
           <NavigationProperty Name="Payments" Relationship="Self.FK__Payment__Transac__59FA5E80" FromRole="TRANSACTION_LOG" ToRole="Payment" />
+          <Property Name="VehicleID" Type="Int32" />
+          <NavigationProperty Name="Vehicle" Relationship="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle" FromRole="TRANSACTION_LOG" ToRole="Vehicle" />
         </EntityType>
         <EntityType Name="USER">
           <Key>
@@ -363,6 +381,7 @@
           <NavigationProperty Name="KHACHHANG" Relationship="Self.FK__Vehicle__ID_Khac__412EB0B6" FromRole="Vehicle" ToRole="KHACHHANG" />
           <NavigationProperty Name="LOAIVE" Relationship="Self.FK__Vehicle__ID_Ve__4222D4EF" FromRole="Vehicle" ToRole="LOAIVE" />
           <NavigationProperty Name="ParkingSpaces" Relationship="Self.FK__ParkingSp__Vehic__48CFD27E" FromRole="Vehicle" ToRole="ParkingSpace" />
+          <NavigationProperty Name="TRANSACTION_LOG" Relationship="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle" FromRole="Vehicle" ToRole="TRANSACTION_LOG" />
         </EntityType>
         <Association Name="FK__Employee__Parkin__5441852A">
           <End Role="ParkingLot" Type="Self.ParkingLot" Multiplicity="1" />
@@ -503,7 +522,23 @@
             <End Role="TRANSACTION_LOG" EntitySet="TRANSACTION_LOG" />
             <End Role="Payment" EntitySet="Payments" />
           </AssociationSet>
+          <AssociationSet Name="FK_TransactionLog_Vehicle" Association="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle">
+            <End Role="Vehicle" EntitySet="Vehicles" />
+            <End Role="TRANSACTION_LOG" EntitySet="TRANSACTION_LOG" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK_TransactionLog_Vehicle">
+          <End Type="CARPARKINGMANAGEMENTModel.Vehicle" Role="Vehicle" Multiplicity="0..1" />
+          <End Type="CARPARKINGMANAGEMENTModel.TRANSACTION_LOG" Role="TRANSACTION_LOG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="VehicleID" />
+            </Principal>
+            <Dependent Role="TRANSACTION_LOG">
+              <PropertyRef Name="VehicleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -589,6 +624,7 @@
           <EntitySetMapping Name="TRANSACTION_LOG">
             <EntityTypeMapping TypeName="CARPARKINGMANAGEMENTModel.TRANSACTION_LOG">
               <MappingFragment StoreEntitySet="TRANSACTION_LOG">
+                <ScalarProperty Name="VehicleID" ColumnName="VehicleID" />
                 <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
                 <ScalarProperty Name="ParkingSpaceID" ColumnName="ParkingSpaceID" />
                 <ScalarProperty Name="EntryTime" ColumnName="EntryTime" />

@@ -23,15 +23,18 @@ namespace PBL3_CARPARKINGMANAGEMENT
             string password = password_txt.Text;
             BLL.UserLoginBLL userLoginBLL = new BLL.UserLoginBLL();
             if (userLoginBLL.CheckLogin(username, password))
-            {
+            {   this.Hide();   
                 MessageBox.Show("Login successful!");
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
+
             }
             else
             {
                 MessageBox.Show("Invalid username or password.");
+                return;
             }
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)

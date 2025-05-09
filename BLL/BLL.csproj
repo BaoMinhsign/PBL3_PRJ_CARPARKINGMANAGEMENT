@@ -51,7 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerBLL.cs" />
     <Compile Include="EmployeeBLL.cs" />
+    <Compile Include="GiaoDichBLL.cs" />
+    <Compile Include="ParkingLotBLL.cs" />
+    <Compile Include="ParkingSpaceBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThongKeBLL.cs" />
     <Compile Include="UserLoginBLL.cs" />

@@ -34,14 +34,16 @@ namespace DAL
             db.Employees.Add(employee);
             db.SaveChanges();
         }
-        public void DeleteEmployee(int employeeID)
+        public bool DeleteEmployee(int employeeID)
         {
             var employee = db.Employees.Find(employeeID);
             if (employee != null)
             {
                 db.Employees.Remove(employee);
                 db.SaveChanges();
+                return true;
             }
+            return false;
         }
         public void UpdateEmployee(Employee employee)
         {

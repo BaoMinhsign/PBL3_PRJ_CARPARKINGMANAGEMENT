@@ -17,9 +17,13 @@ namespace BLL
         {
             employeeDAL.AddEmployee(employee);
         }
-        public void DeleteEmployee(int employeeID)
+        public bool DeleteEmployee(int employeeID)
         {
-            employeeDAL.DeleteEmployee(employeeID);
+            if (employeeDAL.DeleteEmployee(employeeID))
+            {
+                return true;
+            };
+            return false;
         }
         public void UpdateEmployee(Employee employee)
         {

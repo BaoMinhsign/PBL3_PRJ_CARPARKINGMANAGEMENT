@@ -27,43 +27,43 @@ namespace PBL3_CARPARKINGMANAGEMENT
             this.Load += OverViewUC_Load;
             
             // Apply color styles to the text boxes
-            ApplyTextBoxStyles();
+            //ApplyTextBoxStyles();
         }
         
-        private void ApplyTextBoxStyles()
-        {
-            // Set text properties for all parking status text boxes
-            SetTextBoxProperties(guna2TextBox1);
-            SetTextBoxProperties(guna2TextBox2);
-            SetTextBoxProperties(guna2TextBox3);
-            SetTextBoxProperties(guna2TextBox4);
-            SetTextBoxProperties(guna2TextBox5);
-            SetTextBoxProperties(guna2TextBox6);
+        //private void ApplyTextBoxStyles()
+        //{
+        //    // Set text properties for all parking status text boxes
+        //    SetTextBoxProperties(guna2TextBox1);
+        //    SetTextBoxProperties(guna2TextBox2);
+        //    SetTextBoxProperties(guna2TextBox3);
+        //    SetTextBoxProperties(guna2TextBox4);
+        //    SetTextBoxProperties(guna2TextBox5);
+        //    SetTextBoxProperties(guna2TextBox6);
             
-            // Style labels for better contrast
-            guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel3.ForeColor = Color.White;
-            guna2HtmlLabel4.ForeColor = Color.White;
-            guna2HtmlLabel5.ForeColor = Color.White;
-            guna2HtmlLabel6.ForeColor = Color.White;
-            guna2HtmlLabel7.ForeColor = Color.White;
-        }
+        //    // Style labels for better contrast
+        //    guna2HtmlLabel1.ForeColor = Color.White;
+        //    guna2HtmlLabel2.ForeColor = Color.White;
+        //    guna2HtmlLabel3.ForeColor = Color.White;
+        //    guna2HtmlLabel4.ForeColor = Color.White;
+        //    guna2HtmlLabel5.ForeColor = Color.White;
+        //    guna2HtmlLabel6.ForeColor = Color.White;
+        //    guna2HtmlLabel7.ForeColor = Color.White;
+        //}
         
-        private void SetTextBoxProperties(Guna.UI2.WinForms.Guna2TextBox textBox)
-        {
-            // Set common properties for all text boxes
-            textBox.ForeColor = Color.FromArgb(34, 37, 58);  // Dark blue text color
-            textBox.BackColor = Color.White;
-            textBox.Font = new Font("Segoe UI", 16, FontStyle.Bold);
+        //private void SetTextBoxProperties(Guna.UI2.WinForms.Guna2TextBox textBox)
+        //{
+        //    // Set common properties for all text boxes
+        //    textBox.ForeColor = Color.FromArgb(34, 37, 58);  // Dark blue text color
+        //    textBox.BackColor = Color.White;
+        //    textBox.Font = new Font("Segoe UI", 16, FontStyle.Bold);
             
-            // Set placeholder text color
-            textBox.PlaceholderForeColor = Color.FromArgb(125, 137, 149);
+        //    // Set placeholder text color
+        //    textBox.PlaceholderForeColor = Color.FromArgb(125, 137, 149);
             
-            // Set focus colors
-            textBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            textBox.FocusedState.ForeColor = Color.FromArgb(34, 37, 58);
-        }
+        //    // Set focus colors
+        //    textBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+        //    textBox.FocusedState.ForeColor = Color.FromArgb(34, 37, 58);
+        //}
         
         private void OverViewUC_Load(object sender, EventArgs e)
         {

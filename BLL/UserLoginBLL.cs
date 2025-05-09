@@ -21,5 +21,16 @@ namespace BLL
             }
             return false;
         }
+
+        public bool AddUser(string username, string password)
+        {
+            UserLoginDAL userLoginDAL = new UserLoginDAL();
+
+            if (userLoginDAL.IsUsernameExists(username))
+                return false;
+
+            return userLoginDAL.InsertUser(username,password);
+        }
+
     }
 }

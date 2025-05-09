@@ -58,8 +58,7 @@ namespace PBL3_CARPARKINGMANAGEMENT
 
         private void Customer_btn_Click(object sender, EventArgs e)
         {
-            // Customer UserControl would be loaded here
-            // Customer changes affect statistics
+            LoadUC(new CustomerUC());
             RefreshStatisticsIfVisible();
         }
 
@@ -72,8 +71,7 @@ namespace PBL3_CARPARKINGMANAGEMENT
 
         private void Parkinglot_btn_Click(object sender, EventArgs e)
         {
-            // ParkingLot UserControl would be loaded here
-            // Parking lot changes affect statistics
+            LoadUC(new ParkingLotUC());
             RefreshStatisticsIfVisible();
         }
 
@@ -95,6 +93,7 @@ namespace PBL3_CARPARKINGMANAGEMENT
 
         private void Transaction_btn_Click(object sender, EventArgs e)
         {
+            LoadUC(new GiaoDien());
             // Transaction UserControl would be loaded here
             // Transaction changes definitely affect statistics
             RefreshStatisticsIfVisible();
@@ -102,7 +101,9 @@ namespace PBL3_CARPARKINGMANAGEMENT
 
         private void Logout_btn_Click(object sender, EventArgs e)
         {
-            // Logout logic
+            this.Close();
+            SignInForm f = new SignInForm();
+            f.Show();
         }
     }
 }
