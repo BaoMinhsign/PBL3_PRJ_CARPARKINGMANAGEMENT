@@ -80,6 +80,7 @@
     <EntitySetMapping Name="TRANSACTION_LOG">
       <EntityTypeMapping TypeName="CARPARKINGMANAGEMENTModel.TRANSACTION_LOG">
         <MappingFragment StoreEntitySet="TRANSACTION_LOG">
+          <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
           <ScalarProperty Name="VehicleID" ColumnName="VehicleID" />
           <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
           <ScalarProperty Name="ParkingSpaceID" ColumnName="ParkingSpaceID" />

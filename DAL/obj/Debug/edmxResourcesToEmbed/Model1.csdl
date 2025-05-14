@@ -91,6 +91,7 @@
     <NavigationProperty Name="Payments" Relationship="Self.FK__Payment__Transac__59FA5E80" FromRole="TRANSACTION_LOG" ToRole="Payment" />
     <Property Name="VehicleID" Type="Int32" />
     <NavigationProperty Name="Vehicle" Relationship="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle" FromRole="TRANSACTION_LOG" ToRole="Vehicle" />
+    <Property Name="IsPaid" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityType Name="USER">
     <Key>

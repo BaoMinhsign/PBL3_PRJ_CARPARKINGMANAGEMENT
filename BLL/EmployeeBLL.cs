@@ -29,5 +29,9 @@ namespace BLL
         {
             employeeDAL.UpdateEmployee(employee);
         }
+        public List<Employee> SearchEmployee(string searchText)
+        {
+            return employeeDAL.SearchEmployee(searchText);
+        }
     }
 }

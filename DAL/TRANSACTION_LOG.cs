@@ -25,6 +25,7 @@ namespace DAL
         public Nullable<System.DateTime> EntryTime { get; set; }
         public Nullable<System.DateTime> ExitTime { get; set; }
         public Nullable<int> VehicleID { get; set; }
+        public bool IsPaid { get; set; }
     
         public virtual ParkingSpace ParkingSpace { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DAL;
+using System.Linq.Expressions;
 
 namespace PBL3_CARPARKINGMANAGEMENT
 {
@@ -56,53 +57,62 @@ namespace PBL3_CARPARKINGMANAGEMENT
         {
             string searchText = Search_txt.Text.ToLower();
             EmployeeBLL employeeBLL = new EmployeeBLL();
-            List<Employee> employees = employeeBLL.GetAllEmployees();
-            var filteredEmployees = employees.Where(em => em.Name.ToLower().Contains(searchText)).ToList();
+            List<Employee> employees = employeeBLL.SearchEmployee(Search_txt.Text.ToLower());
+            var filteredEmployees = employees;
             Employeedgv.DataSource = filteredEmployees;
         }
         private void Employeedgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
+        {   try
             {
-                string id = Employeedgv.Rows[e.RowIndex].Cells[0].Value.ToString();
-
-                // Nút Sửa
-                if (Employeedgv.Columns[e.ColumnIndex].Name == "clbtnEdit")
+                if (e.RowIndex >= 0)
                 {
-                    Employee employee = new Employee
-                    {
-                        EmployeeID = Convert.ToInt32(ID_txt.Text),
-                        Name = Name_txt.Text,
-                        PhoneNumber = Phonenum_txt.Text,
-                        Position = Pos_txt.Text,
-                        Salary = Convert.ToDecimal(Salary_txt.Text),
-                        ParkingLotID = Convert.ToInt32(ParkingID_txt.Text)
-                    };
+                    string id = Employeedgv.Rows[e.RowIndex].Cells[0].Value.ToString();
 
-                    EmployeeBLL employeeBLL = new EmployeeBLL();
-                    employeeBLL.UpdateEmployee(employee);
-                    LoadData();
-                }
-
-                // Nút Xoá
-                if (Employeedgv.Columns[e.ColumnIndex].Name == "clbtnDel")
-                {
-                    EmployeeBLL bll = new EmployeeBLL();
-                    DialogResult result = MessageBox.Show("Bạn có chắc muốn xoá khách hàng này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (result == DialogResult.Yes)
+                    // Nút Sửa
+                    if (Employeedgv.Columns[e.ColumnIndex].Name == "clbtnEdit")
                     {
-                        if (bll.DeleteEmployee(Convert.ToInt32(id)))
+                        Employee employee = new Employee
                         {
-                            MessageBox.Show("Xoá thành công!");
-                            LoadData();
-                        }
-                        else
+                            EmployeeID = Convert.ToInt32(ID_txt.Text),
+                            Name = Name_txt.Text,
+                            PhoneNumber = Phonenum_txt.Text,
+                            Position = Pos_txt.Text,
+                            Salary = Convert.ToDecimal(Salary_txt.Text),
+                            ParkingLotID = Convert.ToInt32(ParkingID_txt.Text)
+                        };
+
+                        EmployeeBLL employeeBLL = new EmployeeBLL();
+                        employeeBLL.UpdateEmployee(employee);
+                        LoadData();
+                    }
+
+                    // Nút Xoá
+                    if (Employeedgv.Columns[e.ColumnIndex].Name == "clbtnDel")
+                    {
+                        EmployeeBLL bll = new EmployeeBLL();
+                        DialogResult result = MessageBox.Show("Bạn có chắc muốn xoá nhân viên này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (result == DialogResult.Yes)
                         {
-                            MessageBox.Show("Xoá thất bại!");
+                            if (bll.DeleteEmployee(Convert.ToInt32(id)))
+                            {
+                                MessageBox.Show("Xoá thành công!");
+                                LoadData();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Xoá thất bại!");
+                            }
                         }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                string message = ex.InnerException?.Message ?? ex.Message;
+                MessageBox.Show("Lỗi: " + message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
     }
 }

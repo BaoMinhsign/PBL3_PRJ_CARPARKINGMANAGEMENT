@@ -94,6 +94,7 @@
             this.Controls.Add(this.cartypecbB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Parking_StatusForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Parking_StatusForm";
             this.ResumeLayout(false);
 

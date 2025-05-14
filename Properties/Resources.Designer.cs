@@ -283,6 +283,16 @@ namespace PBL3_CARPARKINGMANAGEMENT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap QrCode {
+            get {
+                object obj = ResourceManager.GetObject("QrCode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap remove_icon {
             get {
                 object obj = ResourceManager.GetObject("remove_icon", resourceCulture);

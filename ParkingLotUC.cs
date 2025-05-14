@@ -43,6 +43,11 @@ namespace PBL3_CARPARKINGMANAGEMENT
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
             AddVehicleForm f = new AddVehicleForm();
+            f.FormClosing += (s, args) =>
+            {
+                string selectedLotName = guna2ComboBox1.SelectedItem.ToString();
+                LoadData(selectedLotName);
+            };
             f.Show();
         }
 
@@ -97,5 +102,20 @@ namespace PBL3_CARPARKINGMANAGEMENT
             Parking_StatusForm f = new Parking_StatusForm();
             f.ShowDialog();
         }
+        private void payment_btn_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int VehicleID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[3].Value.ToString());
+                if (VehicleID == 0)
+                {
+                    MessageBox.Show("Vui lòng chọn 1 bãi đỗ có xe để thanh toán", "Thanh Toán Không Hợp Lệ", MessageBoxButtons.OK);
+                    return;
+                }
+                PaymentForm f = new PaymentForm(VehicleID);
+                f.ShowDialog();
+            }
+        }
+
     }
 }

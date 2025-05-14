@@ -78,6 +78,7 @@
     <Property Name="EntryTime" Type="datetime2" Precision="7" />
     <Property Name="ExitTime" Type="datetime2" Precision="7" />
     <Property Name="VehicleID" Type="int" />
+    <Property Name="IsPaid" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="USER">
     <Key>

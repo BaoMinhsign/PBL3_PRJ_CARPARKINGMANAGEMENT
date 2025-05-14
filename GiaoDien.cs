@@ -148,7 +148,8 @@ namespace PBL3_CARPARKINGMANAGEMENT
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            LoadTransactions();
+            GiaoDichBLL bll = new GiaoDichBLL();
+            dataGridView1.DataSource = bll.SearchTransaction(txtSearch.Text, dtpFromDate.Value, dtpToDate.Value);
         }
 
         private void btnReset_Click(object sender, EventArgs e)

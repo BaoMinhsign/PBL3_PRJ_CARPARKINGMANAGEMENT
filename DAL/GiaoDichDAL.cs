@@ -31,11 +31,11 @@ namespace DAL
                             join l in context.LOAIVEs on v.ID_Ve equals l.ID_Ve
                             join p in context.Payments on t.TransactionID equals p.TransactionID into pay
                             from payment in pay.DefaultIfEmpty()
-                            where
-                                (string.IsNullOrEmpty(keyword) ||
-                                 v.LicensePlate.Contains(keyword) ||
-                                 k.Name_Customer.Contains(keyword))
-                                && t.EntryTime >= fromDate && t.EntryTime <= toDate
+                            where t.IsPaid == true
+                                //(string.IsNullOrEmpty(keyword) ||
+                                // (v.LicensePlate.Contains(keyword) ||
+                                // k.Name_Customer.Contains(keyword))
+                                //&& t.EntryTime >= fromDate && t.EntryTime <= toDate
                             orderby t.EntryTime descending
                             select new TransactionDTO
                             {
@@ -49,6 +49,33 @@ namespace DAL
                                 PaymentMethod = payment != null ? payment.PaymentMethod : ""
                             };
 
+                return query.ToList();
+            }
+        }
+        public List<TransactionDTO> SearchTransaction(string keyword, DateTime fromDate, DateTime toDate)
+        {
+            using (var context = new DataAccessEntity())
+            {
+                var query = from t in context.TRANSACTION_LOG
+                            join v in context.Vehicles on t.VehicleID equals v.VehicleID
+                            join k in context.KHACHHANGs on v.ID_Khach equals k.ID_Khach
+                            join l in context.LOAIVEs on v.ID_Ve equals l.ID_Ve
+                            where (string.IsNullOrEmpty(keyword) ||
+                                   (v.LicensePlate.Contains(keyword) ||
+                                    k.Name_Customer.Contains(keyword))) &&
+                                  t.EntryTime >= fromDate && t.EntryTime <= toDate
+                            orderby t.EntryTime descending
+                            select new TransactionDTO
+                            {
+                                TransactionID = t.TransactionID,
+                                LicensePlate = v.LicensePlate,
+                                CustomerName = k.Name_Customer,
+                                TicketType = l.TenVe,
+                                EntryTime = t.EntryTime ?? DateTime.MinValue,
+                                ExitTime = t.ExitTime ?? DateTime.MinValue,
+                                Amount = 0, // Assuming Amount is not needed here
+                                PaymentMethod = "" // Assuming PaymentMethod is not needed here
+                            };
                 return query.ToList();
             }
         }

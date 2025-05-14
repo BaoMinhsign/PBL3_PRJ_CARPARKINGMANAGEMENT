@@ -27,9 +27,9 @@ namespace PBL3_CARPARKINGMANAGEMENT
             if (CustomerDgv.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = CustomerDgv.SelectedRows[0];
-                ID_txt.Text = row.Cells["ID_Khach"].Value.ToString();
-                Name_txt.Text = row.Cells["Name_Customer"].Value.ToString();
-                Phone_txt.Text = row.Cells["Phone"].Value.ToString();
+                ID_txt.Text = row.Cells[0].Value.ToString();
+                Name_txt.Text = row.Cells[1].Value.ToString();
+                Phone_txt.Text = row.Cells[2].Value.ToString();
             }
         }
 

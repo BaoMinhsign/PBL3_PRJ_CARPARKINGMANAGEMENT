@@ -26,5 +26,14 @@ namespace BLL
 
             return _dal.GetTransactions(keyword, fromDate, toDate);
         }
+        public List<TransactionDTO> SearchTransaction(string keyword, DateTime fromDate, DateTime toDate)
+        {
+            // Business logic validations can be added here if needed
+            if (fromDate > toDate)
+            {
+                throw new ArgumentException("Start date cannot be after end date");
+            }
+            return _dal.SearchTransaction(keyword, fromDate, toDate);
+        }
     }
 }

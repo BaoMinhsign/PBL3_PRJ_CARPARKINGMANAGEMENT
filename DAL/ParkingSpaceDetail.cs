@@ -11,6 +11,7 @@ namespace DAL
         public int ID { get; set; }
         public string ParkingLot { get; set; }
         public string Status { get; set; }
+        public int VehicleID { get; set; }
         public string LicensePlate { get; set; }
     }
 

@@ -23,5 +23,37 @@ namespace BLL
         {
             return dal.ExitVehicleFromParkingSpace(parkingspaceID);
         }
+        public bool CheckExistingVehicle(string LicensePlate)
+        {
+            return dal.CheckExistingVehicle(LicensePlate);
+        }
+        //public int GetVehilceID(string LicensePlate)
+        //{
+        //    return dal.GetVehicleID(LicensePlate);
+        //}
+        public Vehicle GetVehicleByID(int vehicleID)
+        {
+            return dal.GetVehicleByID(vehicleID);
+        }
+        public Vehicle GetVehicleInfo(string LicensePlate)
+        {
+            return dal.GetVehicleInfo(LicensePlate);
+        }
+        public KHACHHANG GetCustomerInfo(Vehicle vehicle)
+        {
+            return dal.GetCustomerInfo(vehicle);
+        }
+        public ParkingSpace GetParkingSpaceInfo(Vehicle vehicle)
+        {
+            return dal.GetParkingSpaceInfo(vehicle);
+        }
+        public ParkingLot GetParkingLotInfo(Vehicle vehicle)
+        {
+            return dal.GetParkingLotInfo(vehicle);
+        }   
+        public Payment payment(Vehicle vehicle, string paymentmethod)
+        {
+            return dal.payment(vehicle, paymentmethod);
+        }
     }
 }

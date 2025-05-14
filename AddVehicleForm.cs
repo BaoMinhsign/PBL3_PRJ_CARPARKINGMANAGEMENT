@@ -58,22 +58,28 @@ namespace PBL3_CARPARKINGMANAGEMENT
                 vehicle.VehicleType = CartypecbB.Items[CartypecbB.SelectedIndex].ToString();
                 if (TicketTypecbB.SelectedItem.ToString() == "Vé tháng")
                 {
-                    vehicle.ID_Ve = 1;
+                    vehicle.ID_Ve = 2;
                 }
                 else if (TicketTypecbB.SelectedItem.ToString() == "Vé ngày")
                 {
-                    vehicle.ID_Ve = 2;
+                    vehicle.ID_Ve = 1;
                 }
 
                 // Tạo đối tượng ParkingSpace
                 ParkingSpace ps = new ParkingSpace();
-                ps.ParkingSpaceID = Convert.ToInt32(ParkingspaceID_txt.Text);
 
+                try
+                {
+                    ps.ParkingSpaceID = Convert.ToInt32(ParkingspaceID_txt.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Vui lòng nhập đúng định dạng!");
+                }
                 // Xử lý khách hàng
                 KHACHHANG kh;
                 if (!isVisitor)
                 {
-                    // Nếu là khách vãng lai thì nhập thông tin khách
                     kh = new KHACHHANG
                     {
                         Name_Customer = NameCus_txt.Text,
@@ -113,5 +119,41 @@ namespace PBL3_CARPARKINGMANAGEMENT
         {
             this.Close();
         }
+
+        private void Enterbtn_Click(object sender, EventArgs e)
+        {
+            guna2Panel1.Visible = false;
+            ParkingSpaceBLL psbll = new ParkingSpaceBLL();
+            if (psbll.CheckExistingVehicle(License_txt.Text))
+            {
+                Vehicle v = psbll.GetVehicleInfo(License_txt.Text);
+                KHACHHANG kh = psbll.GetCustomerInfo(v);
+                ParkingSpace ps = psbll.GetParkingSpaceInfo(v);
+                ParkingLot pl = psbll.GetParkingLotInfo(v);
+                bool result = psbll.AddVehicleToParkingSpace(v, kh, ps, pl);
+                kh = null;
+                ps = null;
+                pl = null;
+                v = null;
+
+                if (result)
+                {
+                    MessageBox.Show("Thêm xe thành công!");
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi khi thêm xe.");
+                }
+                this.Close();
+            }
+            else
+            {
+                guna2Panel1.Visible = false;
+                CustomerType_panel.Visible = true;
+                CustomerType_panel.Enabled = true;
+            }
+
+        }
+
     }
 }

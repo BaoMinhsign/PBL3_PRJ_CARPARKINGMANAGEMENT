@@ -36,6 +36,8 @@ namespace DAL
         }
         public bool DeleteEmployee(int employeeID)
         {
+            var user = db.USERs.Where(u => u.EmployeeID == employeeID).ToList();
+            db.USERs.RemoveRange(user);
             var employee = db.Employees.Find(employeeID);
             if (employee != null)
             {
@@ -59,10 +61,10 @@ namespace DAL
                 db.SaveChanges();
             }
         }
-        public void SearchEmployee(string searchTerm)
+        public List<Employee> SearchEmployee(string searchTerm)
         {
             var searchResults = from employee in db.Employees
-                                where employee.Name.Contains(searchTerm) || employee.PhoneNumber.Contains(searchTerm)
+                                where employee.Name.Contains(searchTerm) || employee.PhoneNumber.Contains(searchTerm) || employee.Position.Contains(searchTerm) || employee.ParkingLotID.ToString().Contains(searchTerm) || employee.Salary.ToString().Contains(searchTerm)
                                 select employee;
             List<Employee> resultList = new List<Employee>();
             foreach (var item in searchResults)
@@ -77,6 +79,7 @@ namespace DAL
                 employee.ParkingLotID = item.ParkingLotID;
                 resultList.Add(employee);
             }
+            return resultList;
         }
     }
 }

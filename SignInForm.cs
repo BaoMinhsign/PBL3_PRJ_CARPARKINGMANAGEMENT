@@ -40,7 +40,6 @@ namespace PBL3_CARPARKINGMANAGEMENT
                 MessageBox.Show("Login successful!");
                 MainForm mainForm = new MainForm();
                 mainForm.Show();
-
             }
             else
             {

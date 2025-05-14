@@ -83,6 +83,7 @@
           <Property Name="EntryTime" Type="datetime2" Precision="7" />
           <Property Name="ExitTime" Type="datetime2" Precision="7" />
           <Property Name="VehicleID" Type="int" />
+          <Property Name="IsPaid" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="USER">
           <Key>
@@ -356,6 +357,7 @@
           <NavigationProperty Name="Payments" Relationship="Self.FK__Payment__Transac__59FA5E80" FromRole="TRANSACTION_LOG" ToRole="Payment" />
           <Property Name="VehicleID" Type="Int32" />
           <NavigationProperty Name="Vehicle" Relationship="CARPARKINGMANAGEMENTModel.FK_TransactionLog_Vehicle" FromRole="TRANSACTION_LOG" ToRole="Vehicle" />
+          <Property Name="IsPaid" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="USER">
           <Key>
@@ -624,6 +626,7 @@
           <EntitySetMapping Name="TRANSACTION_LOG">
             <EntityTypeMapping TypeName="CARPARKINGMANAGEMENTModel.TRANSACTION_LOG">
               <MappingFragment StoreEntitySet="TRANSACTION_LOG">
+                <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
                 <ScalarProperty Name="VehicleID" ColumnName="VehicleID" />
                 <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
                 <ScalarProperty Name="ParkingSpaceID" ColumnName="ParkingSpaceID" />

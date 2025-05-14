@@ -34,6 +34,7 @@
             this.cARPARKINGMANAGEMENTDataSet1 = new PBL3_CARPARKINGMANAGEMENT.CARPARKINGMANAGEMENTDataSet1();
             this.cARPARKINGMANAGEMENTDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.payment_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonDelete = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonAdd = new Guna.UI2.WinForms.Guna2Button();
@@ -92,6 +93,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(660, 325);
             this.dataGridView1.TabIndex = 4;
             // 
+            // payment_btn
+            // 
+            this.payment_btn.BorderRadius = 5;
+            this.payment_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.payment_btn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.payment_btn.ForeColor = System.Drawing.Color.White;
+            this.payment_btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(185)))), ((int)(((byte)(232)))));
+            this.payment_btn.Image = global::PBL3_CARPARKINGMANAGEMENT.Properties.Resources.icon_Giaodich;
+            this.payment_btn.Location = new System.Drawing.Point(38, 427);
+            this.payment_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.payment_btn.Name = "payment_btn";
+            this.payment_btn.Size = new System.Drawing.Size(172, 29);
+            this.payment_btn.TabIndex = 6;
+            this.payment_btn.Text = "Thanh toán";
+            this.payment_btn.Click += new System.EventHandler(this.payment_btn_Click);
+            // 
             // guna2Button1
             // 
             this.guna2Button1.BorderRadius = 5;
@@ -148,6 +165,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(9)))), ((int)(((byte)(28)))));
+            this.Controls.Add(this.payment_btn);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.guna2ComboBox1);
@@ -176,5 +194,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource cARPARKINGMANAGEMENTDataSetBindingSource1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button payment_btn;
     }
 }
