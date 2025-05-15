@@ -87,3 +87,81 @@ C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj
 C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.MotorBikeParkingUC.resources
 C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Parking_StatusForm.resources
 C:\Users\TRAN BAO MINH\source\repos\New folder\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.PaymentForm.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\PBL3_CARPARKINGMANAGEMENT.exe.config
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\PBL3_CARPARKINGMANAGEMENT.exe
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\PBL3_CARPARKINGMANAGEMENT.pdb
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\BLL.dll
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\DAL.dll
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\Guna.UI2.dll
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\BLL.pdb
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\BLL.dll.config
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\DAL.pdb
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\DAL.dll.config
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.AddEmployeeForm.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.AddVehicleForm.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.BikeParkingUC.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.CarParkingUC.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.CustomerUC.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.EmployeeUC.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.GiaoDien.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Login.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.MainForm.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.MotorBikeParkingUC.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.OverViewUC.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.ParkingLotUC.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Parking_StatusForm.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.PaymentForm.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.SignInForm.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.SignUpForm.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.ThongKeUC.resources
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.exe
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.pdb
+C:\Users\ADMIN\OneDrive - The University of Technology\Desktop\PBL3\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.AddCustomerForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\PBL3_CARPARKINGMANAGEMENT.exe.config
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\PBL3_CARPARKINGMANAGEMENT.exe
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\PBL3_CARPARKINGMANAGEMENT.pdb
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\BLL.dll
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\DAL.dll
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\Guna.UI2.dll
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\BLL.pdb
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\BLL.dll.config
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\DAL.pdb
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\DAL.dll.config
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.AddCustomerForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.AddEmployeeForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.AddVehicleForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.BikeParkingUC.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.CarParkingUC.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.CustomerUC.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.EmployeeUC.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.GiaoDien.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Login.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.MainForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.MotorBikeParkingUC.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.OverViewUC.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.ParkingLotUC.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Parking_StatusForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.PaymentForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.Properties.Resources.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.SignInForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.SignUpForm.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.ThongKeUC.resources
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\GUI.csproj.Up2Date
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.exe
+C:\Users\DELL\Desktop\Thư mục mới\PBL3_PRJ_CARPARKINGMANAGEMENT\obj\Debug\PBL3_CARPARKINGMANAGEMENT.pdb

@@ -29,5 +29,56 @@ namespace DAL
             }
             return customerData;
         }
+        public void AddCustomer(KHACHHANG cus)
+        {
+            db.KHACHHANGs.Add(cus);
+            db.SaveChanges();
+        }
+        public KHACHHANG GetCustomerById(int id)
+        {
+            return db.KHACHHANGs.FirstOrDefault(c => c.ID_Khach == id);
+        }
+
+        public bool CustomerHasVehicle(int id)
+        {
+            return db.Vehicles.Any(v => v.ID_Khach == id);
+        }
+
+        public bool DeleteCustomer(KHACHHANG customer)
+        {
+            try
+            {
+                db.KHACHHANGs.Remove(customer);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool UpdateCustomer(KHACHHANG updatedCustomer)
+        {
+            try
+            {
+                var existing = db.KHACHHANGs.FirstOrDefault(c => c.ID_Khach == updatedCustomer.ID_Khach);
+                if (existing != null)
+                {
+                    existing.Name_Customer = updatedCustomer.Name_Customer;
+                    existing.Phone = updatedCustomer.Phone;
+                    existing.IsLoyalty = updatedCustomer.IsLoyalty;
+                    existing.DiscountPercentage = updatedCustomer.DiscountPercentage;
+                    existing.DiscountStartDate = updatedCustomer.DiscountStartDate;
+                    existing.DiscountEndDate = updatedCustomer.DiscountEndDate;
+                    db.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

@@ -25,6 +25,12 @@ namespace DAL
             }
                 return userdata;
         }
+
+        public USER GetUserByUsernameAndPassword(string username, string password)
+        {
+            return db.USERs.FirstOrDefault(u => u.Username == username && u.PasswordHash == password);
+        }
+
         public bool InsertUser(string username, string password)
         {
             USER newUser = new USER

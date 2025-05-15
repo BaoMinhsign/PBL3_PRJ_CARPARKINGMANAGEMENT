@@ -41,12 +41,12 @@
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.NameE_txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.NumE_txt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Cancel_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.Submit_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.ParkID_cbB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Pos_cbB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Salary_txt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.ParkID_cbB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.Submit_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.Cancel_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.NumE_txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,9 +60,10 @@
             this.guna2ControlBox1.BorderRadius = 5;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(470, -2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(627, -2);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(31, 21);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(41, 26);
             this.guna2ControlBox1.TabIndex = 0;
             // 
             // guna2ControlBox2
@@ -72,9 +73,10 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(439, -2);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(585, -2);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(31, 21);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(41, 26);
             this.guna2ControlBox2.TabIndex = 1;
             // 
             // guna2Panel1
@@ -82,17 +84,19 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(54)))), ((int)(((byte)(102)))));
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(500, 33);
+            this.guna2Panel1.Size = new System.Drawing.Size(667, 41);
             this.guna2Panel1.TabIndex = 5;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(146, 41);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(195, 50);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(208, 28);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(257, 34);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "THÔNG TIN NHÂN VIÊN";
             // 
@@ -100,9 +104,10 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(21, 105);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(28, 129);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(71, 23);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(86, 28);
             this.guna2HtmlLabel2.TabIndex = 7;
             this.guna2HtmlLabel2.Text = "Họ và tên";
             // 
@@ -110,9 +115,10 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(21, 155);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(28, 191);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(96, 23);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(117, 28);
             this.guna2HtmlLabel3.TabIndex = 8;
             this.guna2HtmlLabel3.Text = "Số điện thoại";
             // 
@@ -120,9 +126,10 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(21, 205);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(28, 252);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(37, 23);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(44, 28);
             this.guna2HtmlLabel4.TabIndex = 9;
             this.guna2HtmlLabel4.Text = "Vị trí";
             // 
@@ -130,9 +137,10 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(21, 255);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(28, 314);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(49, 23);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(60, 28);
             this.guna2HtmlLabel5.TabIndex = 10;
             this.guna2HtmlLabel5.Text = "Lương";
             // 
@@ -140,9 +148,10 @@
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(21, 305);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(28, 375);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(97, 23);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(118, 28);
             this.guna2HtmlLabel6.TabIndex = 11;
             this.guna2HtmlLabel6.Text = "ParkingLot ID";
             // 
@@ -158,11 +167,12 @@
             this.NameE_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.NameE_txt.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.NameE_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NameE_txt.Location = new System.Drawing.Point(146, 100);
+            this.NameE_txt.Location = new System.Drawing.Point(195, 123);
+            this.NameE_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.NameE_txt.Name = "NameE_txt";
             this.NameE_txt.PlaceholderText = "";
             this.NameE_txt.SelectedText = "";
-            this.NameE_txt.Size = new System.Drawing.Size(200, 29);
+            this.NameE_txt.Size = new System.Drawing.Size(267, 36);
             this.NameE_txt.TabIndex = 12;
             // 
             // guna2Panel2
@@ -181,70 +191,49 @@
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel6);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel4);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel5);
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 30);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 37);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(500, 474);
+            this.guna2Panel2.Size = new System.Drawing.Size(667, 583);
             this.guna2Panel2.TabIndex = 13;
             // 
-            // NumE_txt
+            // Cancel_btn
             // 
-            this.NumE_txt.BorderRadius = 10;
-            this.NumE_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NumE_txt.DefaultText = "";
-            this.NumE_txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.NumE_txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.NumE_txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NumE_txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.NumE_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NumE_txt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.NumE_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NumE_txt.Location = new System.Drawing.Point(146, 150);
-            this.NumE_txt.MaxLength = 10;
-            this.NumE_txt.Name = "NumE_txt";
-            this.NumE_txt.PlaceholderText = "";
-            this.NumE_txt.SelectedText = "";
-            this.NumE_txt.Size = new System.Drawing.Size(200, 29);
-            this.NumE_txt.TabIndex = 13;
+            this.Cancel_btn.BorderRadius = 10;
+            this.Cancel_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Cancel_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Cancel_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Cancel_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Cancel_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(163)))), ((int)(((byte)(160)))));
+            this.Cancel_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Cancel_btn.ForeColor = System.Drawing.Color.White;
+            this.Cancel_btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(227)))), ((int)(((byte)(214)))));
+            this.Cancel_btn.Location = new System.Drawing.Point(373, 485);
+            this.Cancel_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cancel_btn.Name = "Cancel_btn";
+            this.Cancel_btn.Size = new System.Drawing.Size(240, 55);
+            this.Cancel_btn.TabIndex = 20;
+            this.Cancel_btn.Text = "Cancel";
+            this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
             // 
-            // Pos_cbB
+            // Submit_btn
             // 
-            this.Pos_cbB.BackColor = System.Drawing.Color.Transparent;
-            this.Pos_cbB.BorderRadius = 10;
-            this.Pos_cbB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.Pos_cbB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Pos_cbB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Pos_cbB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Pos_cbB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Pos_cbB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.Pos_cbB.ItemHeight = 30;
-            this.Pos_cbB.Items.AddRange(new object[] {
-            "Quản lý",
-            "Nhân viên giữ xe",
-            "Nhân viên thu ngân"});
-            this.Pos_cbB.Location = new System.Drawing.Point(146, 200);
-            this.Pos_cbB.Name = "Pos_cbB";
-            this.Pos_cbB.Size = new System.Drawing.Size(140, 36);
-            this.Pos_cbB.TabIndex = 17;
-            // 
-            // Salary_txt
-            // 
-            this.Salary_txt.BorderRadius = 10;
-            this.Salary_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Salary_txt.DefaultText = "";
-            this.Salary_txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Salary_txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Salary_txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Salary_txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Salary_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Salary_txt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Salary_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Salary_txt.Location = new System.Drawing.Point(146, 250);
-            this.Salary_txt.MaxLength = 8;
-            this.Salary_txt.Name = "Salary_txt";
-            this.Salary_txt.PlaceholderText = "";
-            this.Salary_txt.SelectedText = "";
-            this.Salary_txt.Size = new System.Drawing.Size(200, 29);
-            this.Salary_txt.TabIndex = 15;
+            this.Submit_btn.BorderRadius = 10;
+            this.Submit_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Submit_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Submit_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Submit_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Submit_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(163)))), ((int)(((byte)(160)))));
+            this.Submit_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Submit_btn.ForeColor = System.Drawing.Color.White;
+            this.Submit_btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(227)))), ((int)(((byte)(214)))));
+            this.Submit_btn.Location = new System.Drawing.Point(53, 485);
+            this.Submit_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Submit_btn.Name = "Submit_btn";
+            this.Submit_btn.Size = new System.Drawing.Size(240, 55);
+            this.Submit_btn.TabIndex = 19;
+            this.Submit_btn.Text = "Submit";
+            this.Submit_btn.Click += new System.EventHandler(this.Submit_btn_Click);
             // 
             // ParkID_cbB
             // 
@@ -262,59 +251,88 @@
             "2",
             "3",
             "4"});
-            this.ParkID_cbB.Location = new System.Drawing.Point(146, 300);
+            this.ParkID_cbB.Location = new System.Drawing.Point(195, 369);
+            this.ParkID_cbB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ParkID_cbB.Name = "ParkID_cbB";
-            this.ParkID_cbB.Size = new System.Drawing.Size(140, 36);
+            this.ParkID_cbB.Size = new System.Drawing.Size(185, 36);
             this.ParkID_cbB.TabIndex = 18;
             // 
-            // Submit_btn
+            // Pos_cbB
             // 
-            this.Submit_btn.BorderRadius = 10;
-            this.Submit_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Submit_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Submit_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Submit_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Submit_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(163)))), ((int)(((byte)(160)))));
-            this.Submit_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Submit_btn.ForeColor = System.Drawing.Color.White;
-            this.Submit_btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(227)))), ((int)(((byte)(214)))));
-            this.Submit_btn.Location = new System.Drawing.Point(40, 394);
-            this.Submit_btn.Name = "Submit_btn";
-            this.Submit_btn.Size = new System.Drawing.Size(180, 45);
-            this.Submit_btn.TabIndex = 19;
-            this.Submit_btn.Text = "Submit";
-            this.Submit_btn.Click += new System.EventHandler(this.Submit_btn_Click);
+            this.Pos_cbB.BackColor = System.Drawing.Color.Transparent;
+            this.Pos_cbB.BorderRadius = 10;
+            this.Pos_cbB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Pos_cbB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Pos_cbB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Pos_cbB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Pos_cbB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Pos_cbB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.Pos_cbB.ItemHeight = 30;
+            this.Pos_cbB.Items.AddRange(new object[] {
+            "Quản lý",
+            "Nhân viên giữ xe",
+            "Nhân viên thu ngân"});
+            this.Pos_cbB.Location = new System.Drawing.Point(195, 246);
+            this.Pos_cbB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pos_cbB.Name = "Pos_cbB";
+            this.Pos_cbB.Size = new System.Drawing.Size(185, 36);
+            this.Pos_cbB.TabIndex = 17;
             // 
-            // Cancel_btn
+            // Salary_txt
             // 
-            this.Cancel_btn.BorderRadius = 10;
-            this.Cancel_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Cancel_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Cancel_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Cancel_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Cancel_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(163)))), ((int)(((byte)(160)))));
-            this.Cancel_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Cancel_btn.ForeColor = System.Drawing.Color.White;
-            this.Cancel_btn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(227)))), ((int)(((byte)(214)))));
-            this.Cancel_btn.Location = new System.Drawing.Point(280, 394);
-            this.Cancel_btn.Name = "Cancel_btn";
-            this.Cancel_btn.Size = new System.Drawing.Size(180, 45);
-            this.Cancel_btn.TabIndex = 20;
-            this.Cancel_btn.Text = "Cancel";
-            this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
+            this.Salary_txt.BorderRadius = 10;
+            this.Salary_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Salary_txt.DefaultText = "";
+            this.Salary_txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Salary_txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Salary_txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Salary_txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Salary_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Salary_txt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Salary_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Salary_txt.Location = new System.Drawing.Point(195, 308);
+            this.Salary_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Salary_txt.MaxLength = 8;
+            this.Salary_txt.Name = "Salary_txt";
+            this.Salary_txt.PlaceholderText = "";
+            this.Salary_txt.SelectedText = "";
+            this.Salary_txt.Size = new System.Drawing.Size(267, 36);
+            this.Salary_txt.TabIndex = 15;
             // 
-            // AddUserForm
+            // NumE_txt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.NumE_txt.BorderRadius = 10;
+            this.NumE_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NumE_txt.DefaultText = "";
+            this.NumE_txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NumE_txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NumE_txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NumE_txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NumE_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NumE_txt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.NumE_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NumE_txt.Location = new System.Drawing.Point(195, 185);
+            this.NumE_txt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NumE_txt.MaxLength = 10;
+            this.NumE_txt.Name = "NumE_txt";
+            this.NumE_txt.PlaceholderText = "";
+            this.NumE_txt.SelectedText = "";
+            this.NumE_txt.Size = new System.Drawing.Size(267, 36);
+            this.NumE_txt.TabIndex = 13;
+            // 
+            // AddEmployeeForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(500, 505);
+            this.ClientSize = new System.Drawing.Size(667, 622);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AddUserForm";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "AddEmployeeForm";
             this.Text = "AddUserForm";
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();

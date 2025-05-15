@@ -22,19 +22,23 @@ namespace PBL3_CARPARKINGMANAGEMENT
             string username = username_txt.Text;
             string password = password_txt.Text;
             BLL.UserLoginBLL userLoginBLL = new BLL.UserLoginBLL();
-            if (userLoginBLL.CheckLogin(username, password))
-            {   this.Close();   
-                MessageBox.Show("Login successful!");
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
+            // Thay đổi ở đây: Nhận đối tượng USER
+            DAL.USER loggedInUser = userLoginBLL.CheckLogin(username, password);
 
+            if (loggedInUser != null) // Kiểm tra xem user có tồn tại không
+            {   
+                this.Hide(); // Ẩn form đăng nhập thay vì đóng
+                MessageBox.Show("Login successful!");
+                // Truyền thông tin người dùng vào MainForm
+                MainForm mainForm = new MainForm(loggedInUser);
+                mainForm.FormClosed += (s, args) => this.Close(); // Đóng LoginForm khi MainForm đóng
+                mainForm.Show();
             }
             else
             {
                 MessageBox.Show("Invalid username or password.");
-                return;
+                // Không cần return ở đây nữa vì if-else đã xử lý
             }
-
         }
 
         private void cancel_btn_Click(object sender, EventArgs e)
